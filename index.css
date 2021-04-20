@@ -1,0 +1,99 @@
+body
+{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff;
+    background: url(susan-yin-2JIvboGLeho-unsplash.jpg);
+    background-size: cover;
+}
+
+.signup
+{
+    background: rgba(184, 240, 243, 0.5);
+	padding:40px;
+	width:250px;
+	margin:auto;
+	margin-top:65px;
+	height:570px;
+	margin-left:180px;
+	margin:0 auto;
+	margin-top:70px;
+}
+
+form
+{
+    width: 240px;
+    text-align: center;
+}
+
+input
+{ 
+    width: 240px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 17px;
+    font-weight: 300px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type=submit]
+{
+    border: none;
+    width: 190px;
+    text-align: center;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+    color: #fff;
+    background-color: rgb(54, 73, 73);
+}
+
+h2
+{
+    color: #000;
+}
+
+#container{
+display: flex;
+justify-content: space-between;
+margin-right: 25px;
+}
+
+#container .selector1{
+    margin-left: 5px;
+    margin-right: 35px;
+}
+
+#container .selector2{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.Occname1{
+    color: rgb(40, 51, 49);
+    margin-left: -50px;
+}
+
+.Occname2{
+    color: rgb(40, 51, 49);
+    margin-left: -40px;
+}
+        
+::placeholder 
+{
+    color: black;
+    opacity: 0.8;  /*Firefox */
+}
