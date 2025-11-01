@@ -17,7 +17,7 @@
 <div id="container">
     <a href="for.php" style="text-align:center ; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forgot password?</a>
     </div><br /><br /><br /><br /><br /><br />
-Don't have an account?<a href="index.php" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a>
+Don't have an account?<a href="index.php" style="font-family:'Play', sans-serif; color: #4DA3FF; text-decoration: none;">&nbsp;Sign Up</a>
 
 </form>
 </div>

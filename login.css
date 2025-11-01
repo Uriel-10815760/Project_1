@@ -2,20 +2,69 @@ body
 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #fff;
-    background: url(susan-yin-2JIvboGLeho-unsplash.jpg);
+    background: #001a33;
     background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, rgba(0, 118, 214, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 118, 214, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+body::after {
+    content: "const login = async () => {\n  await authenticate();\n  return user;\n};\n\n<form method='POST'>\n  <input type='text' />\n  <button>Login</button>\n</form>\n\nfunction validateUser() {\n  if (credentials) {\n    return true;\n  }\n}\n\nclass Auth {\n  constructor(user) {\n    this.user = user;\n  }\n  verify() {\n    return this.valid;\n  }\n}\n\n// Secure Login System\nlet authenticated = false;\n\n<div class='auth'>\n  <h2>Welcome Back</h2>\n</div>\n\nif (user.valid) {\n  redirect('/dashboard');\n}\n\nconst session = {\n  token: '',\n  expires: Date.now()\n};";
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    width: 110%;
+    height: 120%;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(0, 118, 214, 0.08);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    z-index: 0;
+    pointer-events: none;
+    animation: floatCode 60s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes floatCode {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(-10%) translateX(2%);
+    }
 }
 
 .signin
 {
-    background:  rgba(184, 240, 243, 0.5);
+    background: rgba(0, 118, 214, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 118, 214, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 118, 214, 0.2);
     padding: 40px;
     width: 250px;
     margin: auto;
     margin-top: 90px;
     height: 400px;
     margin-left: 180x;
-    
+    position: relative;
+    z-index: 1;
 }
 
 form
@@ -44,19 +93,23 @@ input[type=button]
 {
     border: none;
     width: 190px;
-    background: white;
-    color: #000;
+    background: #0076D6;
+    color: #fff;
     font-size: 16px;
     line-height: 25px;
     padding: 10px 0;
     border-radius: 15px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 118, 214, 0.3);
 }
 
 input[type=button]:hover
 {
     color: #fff;
-    background-color: rgb(54, 73, 73);
+    background-color: #005BA8;
+    box-shadow: 0 6px 20px rgba(0, 118, 214, 0.5);
+    transform: translateY(-2px);
 }
 
 h2
@@ -67,16 +120,17 @@ h2
 
 a
 {
-    color: yellow;
-    text-decoration: blink;
+    color: #4DA3FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover
 {
-    color: skyblue;
+    color: #E6F3FF;
 }
 
 ::placeholder {
-    color:rgb(36, 47, 56);
+    color: rgba(255, 255, 255, 0.6);
     opacity: 0.8; /* Firefox */
 }

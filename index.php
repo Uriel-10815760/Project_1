@@ -9,8 +9,8 @@
     #msg {
     visibility: hidden;
     min-width: 250px;
-    background-color:yellow;
-    color: #000;
+    background-color: #0076D6;
+    color: #fff;
     text-align: center;
     border-radius: 2px;
     padding: 16px;
@@ -81,7 +81,7 @@
                 <input class="selector2" type="radio" name="Occ" value="s" required/><span class="Occname2">Student</span> 
             </div><br /><br />
             <input name="sub_btn" type="submit" value="Sign up"><br><br>
-            Already have account?<a href="login.php" style="text-decoration: none; font-family: 'Play', sans-serif; color: yellow; font-weight: 200;">&nbsp;Log In</a>
+            Already have account?<a href="login.php" style="text-decoration: none; font-family: 'Play', sans-serif; color: #4DA3FF; font-weight: 200;">&nbsp;Log In</a>
         </form>
     </div>
 </body>
